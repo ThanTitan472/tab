@@ -1,0 +1,4 @@
+1. Chạy node server.js
+2. Mở file client.html trên trình duyệt
+3. Mở console trên trình duyệt để thấy message
+4. Trở lại terminal cũng thấy message

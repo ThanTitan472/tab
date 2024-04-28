@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebSocket Client</title>
+</head>
+<body>
+  <script>
+      // Đúng cách để thiết lập sự kiện cho WebSocket
+  const ws = new WebSocket('ws://localhost:8080');
+
+  // Sử dụng cú pháp đúng để thiết lập sự kiện 'open'
+  ws.onopen = function(event) {
+    // Code để xử lý khi kết nối WebSocket được mở
+    ws.send('Xin chào từ client!');
+  };
+
+  // Sử dụng cú pháp đúng để thiết lập sự kiện 'message'
+  ws.onmessage = function(event) {
+    // Code để xử lý khi nhận được tin nhắn từ server
+    console.log(event.data);
+  };
+
+  </script>
+</body>
+</html>
